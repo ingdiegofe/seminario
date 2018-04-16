@@ -62,7 +62,7 @@
           todaysDate.getFullYear();
     return greetingString;
   }
-  $('#greeting').text(greeting('Pedro'));
+  $('#greeting').text(greeting('Diego Fernández'));
 </script>
 
 <!-- ======================== UNIT-TESTS LOGIC ==================== -->
@@ -82,6 +82,10 @@
 <script>
   function testTheTruth() {
     testResults('1 is equal to 1', 1 === 1);
+    testResults('2 is equal to 1', 2 !== 1);
+    testResults('2 is not equal to 1 compare', 2 == 1);
+    testResults('asegurese qeue el nombre este en mayuscula', 2 == 1);
+    testResults('el año es 2018', 2 == 1);
   }
   (function() {
     testTheTruth();
