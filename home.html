@@ -75,10 +75,15 @@
     success: function(volumes){
       console.log('vols=', volumes);
       mapVolumes(volumes)
+
     }
   });
   function mapVolumes(volumes) {
     console.log('Volumes found = ', volumes.totalItems);
+  }
+
+  function title(volumes){
+    console.log('vols=' + volumes.items[0].volumeInfo.subtitle)
   }
 </script>
 
